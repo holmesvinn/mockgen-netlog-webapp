@@ -5,7 +5,7 @@ const {
   InitSwitchCaseJSAndTS,
   singleCaseJS,
   singleCaseTS,
-} = require('./mock_templates');
+} = require('./mock_template');
 const { createMockFromSwitchCases } = require('./mock_gen_utils');
 try {
   const args = process.argv.splice(2);
