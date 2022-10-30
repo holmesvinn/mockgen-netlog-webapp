@@ -11,7 +11,7 @@ try {
   const args = process.argv.splice(2);
   let configPath = './mock_config.js';
   let outDir = './';
-  console.log(args);
+
   args.forEach((item) => {
     switch (item.split('=')[0]) {
       case '--config':
@@ -26,6 +26,14 @@ try {
   });
   console.log('outdirectory: ', outDir);
   console.log('configPath: ', configPath);
+
+  if(!configPath){
+    console.log("configuration file is required for preceeding")
+    console.log("use the following command: mockgen --config='YOUR_CONFIG_JSON_FILE_PATH'")
+    console.log("For More Info checkout -> https://www.npmjs.com/package/mockgen-netlog-webapp")
+    return
+  }
+
   let config = JSON.parse(fs.readFileSync('./mock_config.json'));
   try {
     config = JSON.parse(fs.readFileSync(configPath)); //reading the configuration file

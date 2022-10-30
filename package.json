@@ -1,6 +1,6 @@
 {
   "name": "mockgen-netlog-webapp",
-  "version": "2.0.4",
+  "version": "2.1.4",
   "description": "Tool to generate mock for you entire webapp from network log",
   "main": "mock_generator.js",
   "bin": {
