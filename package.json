@@ -1,0 +1,21 @@
+{
+  "name": "mockgen-netlog-webapp",
+  "version": "2.0.2",
+  "description": "Tool to generate mock for you entire webapp from network log",
+  "main": "mock_generator.js",
+  "bin": {
+    "mockgen": "mock_generator.js"
+  },
+  "scripts": {
+    "start": "node mock_generator.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mock",
+    "networklog",
+    "interceptor",
+    "middleware"
+  ],
+  "author": "",
+  "license": "ISC"
+}

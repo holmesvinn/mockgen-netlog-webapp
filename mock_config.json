@@ -1,0 +1,20 @@
+{
+    "localHost": "https://localhost:4200",
+    "harPaths": ["./networklog.har"],
+    "resourceTypes": ["xhr"],
+    "priorities": ["High"],
+    "neglectSubstring": [
+      "/collect?",
+      "recording?",
+      "b2c",
+      "cwslogin",
+      "maps",
+      ".json",
+      "track",
+      ".js",
+      ".css"
+    ],
+    "origin": "https://localhost:4200",
+    "postDataUrlKey": "handlerURL"
+  }
+  
