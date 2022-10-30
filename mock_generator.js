@@ -9,7 +9,7 @@ const {
 const { createMockFromSwitchCases } = require('./mock_gen_utils');
 try {
   const args = process.argv.splice(2);
-  let configPath = './mock_config.js';
+  let configPath = '';
   let outDir = './';
 
   args.forEach((item) => {
@@ -24,15 +24,15 @@ try {
         outDir = item.split('=')[1];
     }
   });
-  console.log('outdirectory: ', outDir);
-  console.log('configPath: ', configPath);
-
+  
   if(!configPath){
     console.log("configuration file is required for preceeding")
     console.log("use the following command: mockgen --config='YOUR_CONFIG_JSON_FILE_PATH'")
     console.log("For More Info checkout -> https://www.npmjs.com/package/mockgen-netlog-webapp")
     return
   }
+  console.log('outdirectory: ', outDir);
+  console.log('configPath: ', configPath);
 
   let config = JSON.parse(fs.readFileSync('./mock_config.json'));
   try {
