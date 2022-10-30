@@ -61,3 +61,21 @@
 
  <br>
 
+ # How to use generated mock
+
+ 1. say, mock is generated as __**mock.js**__
+
+ 1. place the **__mock.js__** in the same folder as your node server
+
+ 1. now import the mock.js in to you node server 
+
+ 1. > `` const mock = require('./mock.js');``
+
+ 1. Add this line into your common middleware, where all your apis has will be bypassed
+
+1. >  ``if(mock(req,res)) return;``
+
+<br>
+
+> **Note: From express, req and res can be sent to custom middleware having req and res access, this mock to be hooked before calling next()**
+
