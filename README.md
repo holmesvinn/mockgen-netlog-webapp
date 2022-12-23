@@ -56,6 +56,11 @@
 
  <br>
 
+# Installation
+> ``npm install -g mockgen-netlog-webapp``
+
+<br>
+
  # Command
  > ``mockgen --config="YOUR CONFIG JSON FILE PATH" --out="YOUR OUTPUT FOLDER"``
 

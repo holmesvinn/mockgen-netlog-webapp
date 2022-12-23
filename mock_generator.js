@@ -34,7 +34,6 @@ try {
   console.log('outdirectory: ', outDir);
   console.log('configPath: ', configPath);
 
-  let config = JSON.parse(fs.readFileSync('./mock_config.json'));
   try {
     config = JSON.parse(fs.readFileSync(configPath)); //reading the configuration file
   } catch (err) {
