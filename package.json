@@ -16,6 +16,10 @@
     "interceptor",
     "middleware"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/holmesvinn/mockgen-netlog-webapp.git"
+  },
   "author": "",
   "license": "ISC"
 }
